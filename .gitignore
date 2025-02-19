@@ -1,0 +1,6 @@
+results/
+refs/
+samples/
+.nextflow*
+.nextflow/
+work/
