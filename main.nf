@@ -3,6 +3,7 @@
 include {FASTQC} from './modules/fastqc'
 include {STAR_INDEX} from './modules/star_index'
 include {PARSE_GTF} from './modules/parse_gtf'
+include {STAR_MAPPING} from './modules/star_mapping'
 
 workflow {
 
@@ -15,5 +16,6 @@ workflow {
     FASTQC(fastqc_ch)
     STAR_INDEX(params.genome, params.gtf)
     PARSE_GTF(params.gtf)
+    STAR_MAPPING(fastqc_ch)
 
 }
