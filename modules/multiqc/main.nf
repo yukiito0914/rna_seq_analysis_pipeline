@@ -6,10 +6,10 @@ process MULTIQC {
     publishDir params.outdir, mode: 'copy'
 
     input:
-    tuple val(sample_id), path(reads)
+    path("*")
 
     output:
-    tuple val(sample_id), path('*.html'), emit: html
+    path('*.html'), emit: html
 
     shell:
     """

@@ -9,7 +9,7 @@ process CONCAT_COUNTS {
     path(verse_counts)
 
     output:
-    path("combined_counts.txt"), emit: combined
+    path("combined_counts.txt"), emit: txt
 
     shell:
     """

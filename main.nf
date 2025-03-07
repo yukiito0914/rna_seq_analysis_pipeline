@@ -7,6 +7,7 @@ include {STAR_MAPPING} from './modules/star_mapping'
 include {MULTIQC} from './modules/multiqc'
 include {VERSE} from './modules/verse'
 include {CONCAT_COUNTS} from './modules/concat_counts'
+include {FILTER_COUNTS} from './modules/filter_counts'
 
 workflow { 
 
@@ -37,5 +38,6 @@ workflow {
     | set {concat_ch}
 
     CONCAT_COUNTS(concat_ch)
+    FILTER_COUNTS(CONCAT_COUNTS.out.txt)
 
 }
