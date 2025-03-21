@@ -12,10 +12,14 @@ process DESEQ2 {
     output:
     path("DESeq2_results.csv"), emit: result
     path("DESeq2_top10.csv"), emit: top
+    path("enrichr_input.txt"), emit: enrichr
     path("DESeq2_summary.txt"), emit: summary
     path("PCA_plot.png")
     path("Heatmap.png")
     path("Top10_Pathways.png")
+    path("regulation_summary.txt")
+    path("fig3.c.png")
+    path("fig3.f.png")
 
     shell:
     """

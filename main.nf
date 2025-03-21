@@ -49,6 +49,7 @@ workflow {
     // Filtering the counts matrix
     FILTER_COUNTS(CONCAT_COUNTS.out.txt)
     // Perform differential expression analysis using the filtered counts
+    // Then perform GSEA analysis
     DESEQ2(FILTER_COUNTS.out.flltered, PARSE_GTF.out.txt)
 
 }
