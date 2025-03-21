@@ -1,0 +1,3 @@
+Filtering threshold: 5.0
+Filtered genes: 30150
+Removed genes: 33091

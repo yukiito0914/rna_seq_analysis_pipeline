@@ -1,0 +1,3 @@
+Number of upregulated genes (log2FC > 0, padj < 0.01):312
+Number of downregulated genes (log2FC < 0, padj < 0.01):396
+
