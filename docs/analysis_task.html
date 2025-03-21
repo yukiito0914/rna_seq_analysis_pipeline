@@ -566,34 +566,38 @@ least concerning. Provide a brief statement on where you ranked each and
 why. Assume that the data has not been processed and was provided as-is
 from the sequencing machine.</p>
 <p>1: 50% of reads are multimapped after alignment to the appropriate
-genome This is most concerning. Having half of all reads align to
-multiple genomic locations severely reduces confidence in gene
-quantification. This can distort downstream differential expression
-analysis.</p>
-<p>2: Average PHRED score &lt; 20 in the last 10 bases A PHRED score
-&lt; 20 corresponds to a 1% or higher error rate for each base, which
-increases the chance of mismatches during alignment. If left untrimmed,
-it affects mapping and quantification.</p>
-<p>3: 15% of reads have identical sequences A substantial fraction of
-completely identical reads can indicate PCR duplicates or low library
-complexity. It can artificially inflate expression of some genes.</p>
-<p>4: Unequal number of forward and reverse reads Paired-end data
-assumes one-to-one matching between forward and reverse reads. An
-imbalance suggests a potential issue in sequencing or file
+genome<br />
+This is most concerning. Having half of all reads align to multiple
+genomic locations severely reduces confidence in gene quantification.
+This can distort downstream differential expression analysis.</p>
+<p>2: Average PHRED score &lt; 20 in the last 10 bases<br />
+A PHRED score &lt; 20 corresponds to a 1% or higher error rate for each
+base, which increases the chance of mismatches during alignment. If left
+untrimmed, it affects mapping and quantification.</p>
+<p>3: 15% of reads have identical sequences<br />
+A substantial fraction of completely identical reads can indicate PCR
+duplicates or low library complexity. It can artificially inflate
+expression of some genes.</p>
+<p>4: Unequal number of forward and reverse reads<br />
+Paired-end data assumes one-to-one matching between forward and reverse
+reads. An imbalance suggests a potential issue in sequencing or file
 demultiplexing. It can lead to loss of usable pairs and reduced
 coverage.</p>
-<p>5: Unequal Read Lengths Large discrepancies in read lengths can
-indicate premature truncation or technical issues during sequencing.</p>
+<p>5: Unequal Read Lengths<br />
+Large discrepancies in read lengths can indicate premature truncation or
+technical issues during sequencing.</p>
 <p>6: 10% of reads are unmapped after alignment to the appropriate
-genome Some degree of unmapped reads is normal in RNA-seq, especially if
-they span unannotated regions or are degraded. 10% is within a generally
+genome<br />
+Some degree of unmapped reads is normal in RNA-seq, especially if they
+span unannotated regions or are degraded. 10% is within a generally
 acceptable range, though higher rates may warrant investigation.</p>
-<p>7: Non-random nucleotide distribution in the first 6 bases
+<p>7: Non-random nucleotide distribution in the first 6 bases<br />
 Non-randomness in the first few bases is quite common in RNA-seq
 libraries due to bias from random-priming methods or partial adapter
 sequences. It usually has minimal impact on mapping or quantification,
 especially after trimming or alignment.</p>
-<p>8: Nucleotide frequencies of ACTG are not equal over the entire read
+<p>8: Nucleotide frequencies of ACTG are not equal over the entire
+read<br />
 Transcriptomes are biologically biased, so unequal base composition is
 expected and normal. This is only a concern if the bias is extreme or
 unexpected.</p>
