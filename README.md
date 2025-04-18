@@ -41,6 +41,12 @@ The pipeline produces the following outputs under ```results/```:
 - Combined QC report
 - DE results, plots, and enrichment analysis
 
+## Example Output Figures
+### Sample-to-sample Distance PCA Plot
+![image](https://github.com/user-attachments/assets/8f730f2f-af35-4414-b09f-04dd51e12559)
+### Sample-to-sample Distance Heatmap
+![image](https://github.com/user-attachments/assets/708fe3c6-1c1a-403a-ba68-9c0ef2ffdb4e)
+
 ## Input Format Examples
 metadata.csv:
 ```csv
